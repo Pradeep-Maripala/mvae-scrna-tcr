@@ -78,29 +78,47 @@ TCR-seq input ───► TCR Encoder ──┘                             └
 
 ## Repository Structure
 
-├── DataPreprocessing.Rmd    # Data loading, preprocessing, and EDA
-├── main.py                  # MVAE model architecture and training
-├── figures/                 # Output plots and visualizations
+├── DataPreprocessing.Rmd               # Data loading, preprocessing, and EDA
+
+├── main.py                             # MVAE model architecture and training
+
+├── figures/                            # Output plots and visualizations
+
 └── README.md
 
 ---
 
 ## Getting Started
 
+### Prerequisites
+- Python 3.8+
+- R 4.0+
+
+### Clone the repo
 ```bash
-# Clone the repo
 git clone https://github.com/pradeep-maripala/mvae-scrna-tcr.git
 cd mvae-scrna-tcr
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run preprocessing
-python data/preprocess.py
-
-# Train the model
-python models/mvae.py
 ```
+
+### Install Python dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Install R dependencies
+Open R or RStudio and run:
+```r
+install.packages(c("Seurat", "Matrix", "ggplot2"))
+```
+
+### Run preprocessing (R)
+Open and knit `DataPreprocessing.Rmd` in RStudio
+
+### Train the model (Python)
+```bash
+python main.py
+```
+
 
 ---
 
