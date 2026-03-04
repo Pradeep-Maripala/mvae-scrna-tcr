@@ -78,18 +78,10 @@ TCR-seq input ───► TCR Encoder ──┘                             └
 
 ## Repository Structure
 
-```
-├── data/                  # Data loading and preprocessing scripts
-├── models/                # MVAE model architecture
-│   └── mvae.py
-├── notebooks/             # Exploratory analysis and results
-│   ├── 01_preprocessing.ipynb
-│   ├── 02_training.ipynb
-│   └── 03_results.ipynb
-├── figures/               # Output plots and visualizations
-├── requirements.txt
+├── DataPreprocessing.Rmd    # Data loading, preprocessing, and EDA
+├── main.py                  # MVAE model architecture and training
+├── figures/                 # Output plots and visualizations
 └── README.md
-```
 
 ---
 
